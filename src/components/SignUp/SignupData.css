@@ -1,0 +1,77 @@
+.signup-data{
+    /* border: 2px solid red; */
+    box-shadow: 3px 4px 13px 8px rgba(36,0,0,0.75);
+    margin: 10% auto;
+    height: 480px;
+    width: 380px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+#signup-page{
+    padding: 1.2% 0;
+}
+#signup-page input{
+    height: 38px;
+    width: 70%;
+    margin: 15px;
+    padding: 10px;
+}
+#signup-page button{
+    margin: 0 auto;
+}
+#login-page{
+    display: none;
+    padding: 10% 0;
+}
+#login-page input{
+    height: 38px;
+    width: 70%;
+    margin: 15px;
+    padding: 10px;
+}
+#login-page button{
+    margin: 0 auto;
+}
+#toggle-btn{
+    /* border: 2px solid yellow; */
+    box-shadow: 3px 4px 15px 8px rgba(130,124,10,0.75);
+    border-radius: 20px;
+    width: 180px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+    position: relative;
+}
+.btn-nav{
+    background: transparent;
+    color: black;
+    outline: none;
+    border: none;
+    margin: auto;
+    /* padding: 0; */
+}
+#btn{
+    /* border: 2px solid green; */
+    /* background-color: rgba(8, 248, 228, 0.75); */
+    border: 1px solid aqua;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 90px;
+    border-radius: 20px;
+}
+/* #btn.active{
+
+} */
+@media screen and (max-width:850px) {
+    .signup-data{
+        box-shadow: 3px 4px 13px 8px rgba(36,0,0,0.75);
+        margin-top: 18%;
+    }
+    
+}
+
+
+

@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    /* border: 2px solid black; */
+    background-color: #fff;
+    border-radius: 13px;
+    width: 95%;
+    height: 80px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 2%;
+    z-index: 999;
+    margin-left: 2.5%;
+    box-shadow: 1px 1px 19px 2px rgba(0,0,0,0.71);
+    -webkit-box-shadow: 1px 1px 19px 2px rgba(0,0,0,0.71);
+    -moz-box-shadow: 1px 1px 19px 2px rgba(0,0,0,0.71);
+}
+.navbar h1{
+    font-size: 50px;
+    /* font-weight: 800; */
+    cursor: pointer;
+}
+.navbar ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-gap: 30px;
+    align-items: center;
+}
+.nav-links{
+    /* border: 2px solid blue; */
+    border-radius: 9px;
+    padding: 4px;
+    color: #222;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+}
+.nav-links:hover{
+    color: #fff;
+    background: #047a23;
+}
+.nav-links i{
+    padding-right: 5px;
+}
+.sign-up{
+    display: none;
+}
+button{
+    margin-left: -20px;
+    margin-right: 20px;
+    padding: 10px 20px;
+    background: #222;
+    color: #fff;
+    cursor: pointer;
+}
+button:hover{
+    color: #222;
+    background-color: white;
+}
+#sign{
+    text-decoration: none;
+    color: #fff;
+}
+#sign:hover{
+    color: #222;
+}
+.mobile-nav{
+    /* font-size: larger;
+    cursor: pointer; */
+    display: none;
+}
+@media screen and (max-width:850px) {
+    .navbar{
+        z-index: 99;
+    }
+    .navbar ul{
+        /* border: 2px solid blue; */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        position: absolute;
+        top: 0;
+        left: -150%;
+        width: 100%;
+        align-items: stretch;
+        padding: 90px 0 30px;
+        border-radius: 13px;
+        background-color: #fff;
+
+
+    }
+    #nav-list.active{
+        left: 0;
+        z-index: -1;
+        box-shadow: 1px 1px 19px 2px rgba(0,0,0,0.71);
+        -webkit-box-shadow: 1px 1px 19px 2px rgba(0,0,0,0.71);
+        -moz-box-shadow: 1px 1px 19px 2px rgba(0,0,0,0.71);
+    }
+    .nav-links{
+        /* border: 2px solid blue; */
+        display: block;
+        padding: 10px 0;
+        
+    }
+    #nav-list button{
+        display: none;
+    }
+    .sign-up{
+        display: block;
+        letter-spacing: 2px;
+        text-decoration: none;
+        font-size: larger;
+        font-weight: 700;
+        color: white;
+        background: #222;
+        width: 80%;
+        margin: auto;
+        padding: 10px 0;
+    }
+    .mobile-nav{
+        display: block;
+        font-size: larger;
+        cursor: pointer;   
+    }
+    
+}
